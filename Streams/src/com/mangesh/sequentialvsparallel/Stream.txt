@@ -1,0 +1,25 @@
+We have two types of stream in java 8
+1.sequential stream (default stream) -
+	when to use
+	- you care about the order
+
+	-performance is less than parellel
+	-it uses single core
+
+core == iteration1->iteration2->iteration3->iteraion4;
+
+
+
+2.parallel Stream
+	when to use
+	- order is not important for u
+	- performance is better than sequential
+
+	- it used the multiple core of system.(different thread will be created)
+core == iteration1
+core2 == ->iteration2
+core 3 ->iteration3 ->iteraion4;
+
+
+
+
