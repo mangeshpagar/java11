@@ -5,6 +5,7 @@ We have two types of stream in java 8
 
 	-performance is less than parellel
 	-it uses single core
+	It uses default thread pull and main thread
 
 core == iteration1->iteration2->iteration3->iteraion4;
 Example : com.mangesh.sequentialvsparallel;
@@ -14,8 +15,8 @@ Example : com.mangesh.sequentialvsparallel;
 	when to use
 	- order is not important for u
 	- performance is better than sequential
-
 	- it used the multiple core of system.(different thread will be created)
+    -It uses ForkJoinThreadpool.
 core == iteration1
 core2 == ->iteration2
 core 3 ->iteration3 ->iteraion4;
